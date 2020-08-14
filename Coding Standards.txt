@@ -31,6 +31,8 @@ annotations, methods: 0
 
 
 COMMENTS:
+lines of code which are not intuitive must be commented
+functions which are not blatantly intuitive must have a comment under the declaration (something like `int add(int a, int b){return(a+b);}` would not need to be commented...)
 line comments under variable or method initializations (about variable initializations), next initializations: 2
 unrelated line comments, anything: 1 (true)
 block comment, anything: 1 (true)

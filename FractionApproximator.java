@@ -5,7 +5,6 @@ public class FractionApproximator{
 
      public static void main(String []args){
 		 
-		 
 		Scanner scan = new Scanner(System.in);
         
 		System.out.println("Please enter a number to be approximated as a fraction: \n");
@@ -15,7 +14,6 @@ public class FractionApproximator{
 		System.out.println("\nPlease enter an integer for the maximum value of the denominator: \n");
 		
 		long limit = scan.nextLong();
-		
 		
 		long a;
 		double difference = 10000000;
@@ -38,15 +36,6 @@ public class FractionApproximator{
 				System.out.println(a + "/" + b + " | " + ((double)a/(double)b));
 			} 
 		
-			
-			
 		}
-			
-			
-			
-		
-        
-        
-        
      }
 }

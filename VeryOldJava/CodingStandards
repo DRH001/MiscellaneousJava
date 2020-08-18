@@ -1,0 +1,43 @@
+between A, (B): lines to skip (boolean reversible (default -> (B == null)?true:false))
+braces count as whatever they are part of
+
+
+package declaration and import statements: 2
+unrelated imports: 1
+related imports: 0
+imports, class declaration: 2
+class declaration and beginning functions: 1
+method (longest sub-method is > 5 lines) declarations and starting code: 1
+method (longest sub-method is <= 5 lines) declarations and starting code: 0
+method, anything unrelated: 3
+duplicate methods (which use different objects as arguments): 2 (annotations are included in this)
+different methods: 3
+stacked closing braces: 1
+related declarations: 0
+unrelated declarations: 1
+declarations, unrelated method: 3 (true)
+declarations, related method (longest sub-method is > 5 lines): 1
+declarations, related method (longest sub-method is <= 5 lines): 0
+declarations, unrelated declarations related to and above method: 2
+statements, related statements: 0
+statements, slightly unrelated statements: 1
+statements, moderately unrelated statements: 2
+statements, completely unrelated statements: 3
+last line in method, method end bracked: 0
+empty method declaration, end bracket: 1
+annotations, methods: 0
+
+
+
+
+COMMENTS:
+lines of code which are not intuitive must be commented
+functions which are not blatantly intuitive must have a comment under the declaration (something like `int add(int a, int b){return(a+b);}` would not need to be commented...)
+line comments under variable or method initializations (about variable initializations), next initializations: 2
+unrelated line comments, anything: 1 (true)
+block comment, anything: 1 (true)
+//*/ block comments (to make code commented/not commented fast), anything: 3, true
+any comments referencing an above line, above line: 0
+
+block comments in code are used for method function descriptions
+docstrings in code (not default docstring) are to-do lists, reminders, or links that will be taken out of final production code

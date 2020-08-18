@@ -1,11 +1,4 @@
-/*
- *Daniel Holmes
- *Fredericton High School
- *Ms. Brooks
- *Assignment: J11
- *2019/05/30
- */
- 
+
  
  
 import java.awt.*;
